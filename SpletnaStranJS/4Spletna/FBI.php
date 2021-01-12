@@ -28,6 +28,9 @@
     require "Template.php"; //povezava do template dokumenta
 
 
+    
+
+
     //function get_image($link, $class) {
     //    $img = '<img class="'.$class.'" src="'.$link.'" alt="'.$link.'">';
     //    return $img;
