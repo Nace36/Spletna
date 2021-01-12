@@ -1,0 +1,231 @@
+/* oblikovna datoteka css */
+
+@charset "utf-8";
+
+*{
+    margin: none;
+}
+* {
+    font-family: 'Roboto Condensed', 'sans-serif'; /*za pisavo*/
+    font: bold;                 /* za font*/
+
+}
+
+body{
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box; /*box siting*/
+}
+
+
+
+[class*="Vi-"] {
+    padding: 15px;
+}
+
+.Row::after {          /*da je so columni v isti vrsti in d se ne podirajo*/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.Levo{
+    float: left;      /*da zaplava element levo*/
+}
+
+
+
+.Desno{
+	float: right;       /*da zaplava element desno*/
+}
+.Sredina{
+    float: left;
+}
+
+
+.Vi-60 {width:  60%;}      /*širina 60%*/
+
+.Vi-40 {width: 40%;}        /*Širina 40%*/
+
+.Vi-100{ width: 100;}       /*Širina 100%*/
+
+.Vi-33{ width: 33%;}
+
+
+
+.img0 {                     /*za sliko za meni*/
+    width: 3%;
+    height: auto;
+    float: right;
+}
+
+.img1 {                     /*te elementi so za širino slik*/
+    padding-top: 4%;
+    width: 10%;
+    height: auto;
+}
+.img2 {
+    width: 15%;
+    height: auto;
+}
+.img3 {
+    width: 20%;
+    height: auto;
+}
+.img4 {
+    width: 25%;
+    height: auto;
+}
+.img5 {
+    width: 50%;
+    height: auto;
+}
+
+.img6 {
+    width: 100%;
+    height: auto;
+}
+
+.h30{
+    height:30%;
+}
+
+
+.Centr{                /*eno oblikovanje texta*/
+    color:white;
+    text-align: center;
+
+}
+
+.Centrr{                /*drugo oblikovanje texta*/
+    color:white;
+    text-align:center;
+    padding-bottom: 5%;
+}
+
+.Centrrr{                   /*tretje oblikovanje texta*/
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.Centrrrr{                  /*cetrto oblikovanje texta*/
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 4%;
+    color:black;
+}
+
+
+.Orang{
+    background-color:#f44336;       /*barva za ozadje*/
+}
+
+
+.Grayo{
+    background-color: #666666;          /*barva za ozadje in za barvo pisave*/
+    color: white;
+    text-align: center;
+}
+
+.AdvancedBela{
+    background-color:#f1f1f1;           /*barva za ozadje*/
+}
+
+.txt60{                                 /*peto oblikovanje texta*/
+    color: #757575;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 1.5em;
+
+
+}
+ul {                                    /*oblikovanje Lista, brez pikic, brez paddinga in margina, barva ozadja, fixiran position sirina ces cel zaslon z box shadow*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f44336;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0.09em 0.5em 0 rgba(0,0,0,0.16), 0 0.09em 0.5em 0 rgba(0,0,0,0.12);
+  }
+  
+  li {
+    float: left;                    /*Seznam zaplava levo*/
+  }
+  
+  li a, .dropbtn {                  /*vzame celo mozno sirino*/
+    display: inline-block;
+    color: white;                 /*spremeni barvo seznamu iz modre v belo*/            
+    text-align: center;             /*poravna text v sredino block-a*/
+    padding: 1em 2em;               /*doda lep razmak ob na vrhu in strani */
+    text-decoration: none;          /*zbriše spodaj črto ki doda za hyperlink*/
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;        /*Spremeni iz oranzne v belo ce das kurzor gor na eden del od seznama*/
+    color: black;                   /*spremeni iz bele v črno ce das kurzor gor na en del od seznama*/
+  }
+  
+ 
+  
+  .dropdown-vsebina {
+    display: none;                 /*skrije dropdown meni ce ni gor kurzor*/
+    position: absolute;             /*prepreči deformiranje celotnega navigacijskega menija v primeru hooverja*/
+    background-color: white;       /*ce je hoover spremeni dropdown meni background color v belo*/
+    
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2); /*nardi box shadow pod menijem*/
+  }
+  
+  .dropdown-vsebina a {             
+    color: black;               /*spremeni barvo texta v črno v dropdon meniju*/
+    text-decoration: none;        /*odstrani črto za hyperlink*/
+    display: block;               /*elemente spravi enga pod druzga*/
+    text-align: left;             /*ves text v dropdown meniju shifta na levo stran*/
+  }
+  
+  .dropdown-vsebina a:hover {background-color: #f1f1f1;}  /*hoover v dropdown meniju spremeni v f1f11f1*/
+  
+  .dropdown:hover .dropdown-vsebina {
+    display: block;                     /*omogči da dropdown meni sploh obstaja*/
+  }
+
+  input[type="text"],input[type="password"],input[type="number"], select {     
+    width: 100%;                      /*cel ta input field podalša ces cel mozn prostor*/
+    padding: 2% 1%;                   /*nardi padding ob vseh stranicah*/
+    margin: 1% 0;                     /*loči elemente mal bolj*/              
+    border:  0.05em solid #ccc;     /*nardi border pri input elementih da ni tko grdo*/
+  }
+  
+  input[type=submit] {
+    width: 100%;                      /*spremeni gumb "submit" v celotno mozno dolzino*/
+    background-color: #f44336;      /*spremeni njegovo barvo*/
+    color: white;                   /*text spremeni u belo*/
+    padding: 2% 0;                    /*nardi gumb mal vecji*/     
+    margin: 1% 0;                     /*loci od zgornjega in spodnjega elementa*/
+    border: none;                     /*nardi brez meje al neki*/
+    cursor: pointer;                  /*spremeni kurzor v kazalec*/
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ccc;          /*ko je hover spremeni barvo u #CCC*/
+  }
+
+  .gumbek{
+    width: 100%;                      /*spremeni gumb "submit" v celotno mozno dolzino*/
+    background-color: #f44336;      /*spremeni njegovo barvo*/
+    color: white;                   /*text spremeni u belo*/
+    padding: 2% 0;                    /*nardi gumb mal vecji*/     
+    margin: 1% 0;                     /*loci od zgornjega in spodnjega elementa*/
+    border: none;                     /*nardi brez meje al neki*/
+    cursor: pointer;                  /*spremeni kurzor v kazalec*/
+    width: 100%;                      /*cel ta input field podalša ces cel mozn prostor*/
+    padding: 2% 1%;                   /*nardi padding ob vseh stranicah*/
+    margin: 1% 0;                     /*loči elemente mal bolj*/              
+    border:  0.05em solid #ccc;     /*nardi border pri input elementih da ni tko grdo*/
+  }
+
